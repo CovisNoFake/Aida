@@ -6,7 +6,25 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
-    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    Background="#aad00f">
 
-    <Grid/>
+    <Grid>
+        <Button Content="Iniciar Sesión" 
+                HorizontalAlignment="Left" 
+                Margin="597,679,0,0" 
+                VerticalAlignment="Top"
+                Background="White"
+                FontSize="40dp"
+                Height="80" Width="281"/>
+        <TextBlock HorizontalAlignment="Left" 
+                   Margin="648,816,0,0"
+                   FontSize="40dp"
+                   Foreground="White"
+                   FontWeight="Bold"
+                   TextDecorations="None"
+                   Text="AGENDA" 
+                   TextWrapping="Wrap" 
+                   VerticalAlignment="Top" 
+                   Height="61" Width="187"/>
+    </Grid>
 </Page>
