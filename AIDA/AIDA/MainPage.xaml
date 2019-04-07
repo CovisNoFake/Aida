@@ -6,18 +6,21 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
+    Width="1920"
+    Height="1200"
     Background="#aad00f">
 
     <Grid>
         <Button Content="Iniciar Sesión" 
                 HorizontalAlignment="Left" 
-                Margin="597,679,0,0" 
+                Margin="833,679,0,0" 
                 VerticalAlignment="Top"
                 Background="White"
+                Click="IniciaSecion"
                 FontSize="40dp"
                 Height="80" Width="281"/>
         <TextBlock HorizontalAlignment="Left" 
-                   Margin="648,816,0,0"
+                   Margin="882,819,0,0"
                    FontSize="40dp"
                    Foreground="White"
                    FontWeight="Bold"
