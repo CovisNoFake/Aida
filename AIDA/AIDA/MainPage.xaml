@@ -6,28 +6,29 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
-    Width="1920"
-    Height="1200"
     Background="#aad00f">
 
-    <Grid>
-        <Button Content="Iniciar Sesión" 
-                HorizontalAlignment="Left" 
-                Margin="833,679,0,0" 
-                VerticalAlignment="Top"
+    <RelativePanel>
+        <Button Content="Iniciar Sesión"
+                FontSize="30"
                 Background="White"
+                HorizontalAlignment="Left" 
+                Height="74"
+                VerticalAlignment="Top" 
+                Width="392" 
                 Click="IniciaSecion"
-                FontSize="40dp"
-                Height="80" Width="281"/>
+                Margin="764,636,0,0"/>
+        
         <TextBlock HorizontalAlignment="Left" 
-                   Margin="882,819,0,0"
-                   FontSize="40dp"
+                   TextAlignment="Center"
                    Foreground="White"
-                   FontWeight="Bold"
-                   TextDecorations="None"
+                   FontSize="30"
+                   Height="73" 
                    Text="AGENDA" 
+                   FontWeight="Bold"
                    TextWrapping="Wrap" 
                    VerticalAlignment="Top" 
-                   Height="61" Width="187"/>
-    </Grid>
+                   Width="274" 
+                   Margin="819,816,0,0"/>
+    </RelativePanel>
 </Page>

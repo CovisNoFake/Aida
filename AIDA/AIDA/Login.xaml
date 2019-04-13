@@ -6,72 +6,69 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
-    Width="1920"
-    Height="1200"
     Background="#aad00f">
 
-    <Grid>
+    <RelativePanel>
         <TextBlock 
-            HorizontalAlignment="Left" 
-            Margin="812,367,0,0"
-            Text="Correo:" 
-            FontSize="40dp"
             TextAlignment="Center"
-            FontWeight="SemiBold"
-            Foreground="White"
-            TextWrapping="Wrap" 
-            VerticalAlignment="Top" Height="61" Width="304" RenderTransformOrigin="0.539,0.141"/>
-
-        <TextBox HorizontalAlignment="Left" 
-                 Margin="737,445,0,0" 
-                 Background="White"
-                 TextAlignment="Center"
-                 PlaceholderText="Correo"
-                 VerticalAlignment="Top" 
-                 FontSize="40dp"
-                 Height="96" Width="443"/>
-
-        <TextBlock 
+            FontSize="30"
             HorizontalAlignment="Left" 
-            Margin="810,572,0,0"
-            Text="Contraseña:" 
-            FontSize="40dp"
-            TextAlignment="Center"
-            FontWeight="SemiBold"
-            Foreground="White"
+            Text="Correo: " 
             TextWrapping="Wrap" 
-            VerticalAlignment="Top" Height="85" Width="304"/>
+            Width="378" 
+            Margin="772,404,0,72" VerticalAlignment="Stretch"/>
 
-        <TextBox HorizontalAlignment="Left" 
-                 Margin="742,650,0,0" 
-                 Background="White"
-                 TextAlignment="Center"
-                 PlaceholderText="Contraseña"
-                 VerticalAlignment="Top" 
-                 FontSize="40dp"
-                 Height="96" Width="443"/>
+        <TextBox 
+            Background="White"
+            HorizontalAlignment="Left" 
+            Height="77"
+            PlaceholderText="Correo"
+            VerticalAlignment="Top" 
+            Width="397" 
+            FontSize="30"
+            Margin="762,463,0,0"/>
 
         <TextBlock 
-            HorizontalAlignment="Left" 
-            Margin="712,775,0,0"
-            Text="¿Olvidaste tu contraseña?" 
-            FontSize="40dp"
             TextAlignment="Center"
-            FontWeight="SemiBold"
-            Foreground="White"
+           HorizontalAlignment="Left" 
+            Text="Contraseña" 
+            FontSize="30"
             TextWrapping="Wrap" 
-            VerticalAlignment="Top" Height="85" Width="499"/>
+            Width="393" 
+            Margin="762,563,0,107"/>
 
-        <Button Content="Iniciar Sesión"
-                HorizontalAlignment="Left"
-                FontSize="40dp"
-                Click="Inicia"
-                Margin="825,860,0,0" 
-                Background="White"
-                VerticalAlignment="Top" 
-                Height="80" Width="275"/>
+        <PasswordBox 
+            Background="White"
+            HorizontalAlignment="Left" 
+            Height="68" 
+            PlaceholderText="Contraseña"
+            VerticalAlignment="Top" 
+            Width="397" 
+            FontSize="30"
+            Margin="762,636,0,0"/>
+
+        <TextBlock 
+            FontSize="30"
+            TextAlignment="Center"
+            HorizontalAlignment="Left" 
+            Height="37" 
+            Text="¿Olvidste la contraseña?" 
+            TextWrapping="Wrap" 
+            VerticalAlignment="Top" 
+            Width="393" 
+            Margin="762,727,0,0"/>
+        <Button 
+            Content="Iniciar Sesión" 
+            Background="White"
+            FontSize="30"
+            Click="Inicia"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Stretch" Width="273"
+            Margin="824,806,0,-139"/>
 
 
 
-    </Grid>
+
+
+    </RelativePanel>
 </Page>
