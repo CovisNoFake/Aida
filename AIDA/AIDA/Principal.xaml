@@ -7,8 +7,22 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    <RelativePanel>
+        <Grid HorizontalAlignment="Center" 
+              Height="167" 
+              VerticalAlignment="Center" 
+              Background="#e0dfdf"
+              Width="1920" Margin="0,0,0,0">
 
-    <Grid>
-    
-    </Grid>
+            <HyperlinkButton Content="CREAR TAREA"
+                             FontSize="40"
+                             Click="CreaTarea"
+                             x:Name="ctarea"
+                             Foreground="#269d5d"
+                             HorizontalAlignment="Left" 
+                             Margin="1311,0,0,0" 
+                             VerticalAlignment="Center" 
+                             Height="103" Width="272" RenderTransformOrigin="0.529,0.505"/>
+        </Grid>
+    </RelativePanel>
 </Page>
