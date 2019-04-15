@@ -5,8 +5,10 @@
     xmlns:local="using:AIDA"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    mc:Ignorable="d"
-    Background="#aad00f">
+    mc:Ignorable="d">
+    <Page.Background>
+        <ImageBrush ImageSource="/Assets/fondo.jpg" Stretch="UniformToFill"/>
+    </Page.Background>
 
     <RelativePanel>
         <TextBlock 
@@ -14,6 +16,7 @@
             FontSize="30"
             HorizontalAlignment="Left" 
             Text="Correo: " 
+            Foreground="White"
             TextWrapping="Wrap" 
             Width="378" 
             Margin="772,404,0,72" VerticalAlignment="Stretch"/>
@@ -30,7 +33,8 @@
 
         <TextBlock 
             TextAlignment="Center"
-           HorizontalAlignment="Left" 
+            Foreground="White"
+            HorizontalAlignment="Left" 
             Text="Contraseña" 
             FontSize="30"
             TextWrapping="Wrap" 
@@ -50,6 +54,7 @@
         <TextBlock 
             FontSize="30"
             TextAlignment="Center"
+            Foreground="White"
             HorizontalAlignment="Left" 
             Height="37" 
             Text="¿Olvidste la contraseña?" 

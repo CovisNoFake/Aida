@@ -6,7 +6,11 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
-    Background="#aad00f">
+    >
+    <Page.Background>
+        <ImageBrush ImageSource="/Assets/fondo.jpg"/>
+    </Page.Background>
+
 
     <RelativePanel>
         <Button Content="Iniciar Sesión"
@@ -18,7 +22,7 @@
                 Width="392" 
                 Click="IniciaSecion"
                 Margin="764,636,0,0"/>
-        
+
         <TextBlock HorizontalAlignment="Left" 
                    TextAlignment="Center"
                    Foreground="White"

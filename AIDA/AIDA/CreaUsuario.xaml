@@ -1,0 +1,114 @@
+﻿<Page
+    x:Class="AIDA.CreaUsuario"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:AIDA"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <RelativePanel>
+        <Grid HorizontalAlignment="Center" 
+              Height="167" 
+              VerticalAlignment="top" 
+              Background="#e0dfdf"
+              Width="1920" Margin="0,0,0,0">
+            <TextBlock HorizontalAlignment="Left" 
+                       Margin="282,57,0,0" 
+                       Text="USUARIOS" 
+                       FontSize="40"
+                       Foreground="#269d5d"
+                       TextWrapping="Wrap" 
+                       VerticalAlignment="Top"
+                       Height="61" Width="268"/>
+        </Grid>
+        <TextBlock HorizontalAlignment="Left" 
+                   Height="68" 
+                   Text="Agregar nuevo integrante de servicio." 
+                   Foreground="#269d5d"
+                   VerticalAlignment="Top" 
+                   Width="667" 
+                   FontSize="40"
+                   Margin="158,222,0,0"/>
+        <TextBlock HorizontalAlignment="Left"
+                   Margin="158,348,0,0" 
+                   Text="Nombre:" 
+                   Foreground="#269d5d"
+                   FontWeight="SemiBold"
+                   FontSize="40"
+                   TextWrapping="Wrap"
+                   VerticalAlignment="Top"/>
+
+        <TextBox HorizontalAlignment="Left" 
+                 Margin="158,421,0,0" 
+                 FontSize="35"
+                 TextAlignment="Left"
+                 Background="#e0dfdf"
+                 BorderBrush="#e0dfdf"
+                 VerticalAlignment="Top"
+                 Height="80"
+                 Width="894"/>
+
+        <TextBlock HorizontalAlignment="Left" 
+                   Margin="158,514,0,0" 
+                   Text="Correo: " 
+                   Foreground="#269d5d"
+                   FontWeight="SemiBold"
+                   FontSize="40"
+                   TextWrapping="Wrap" 
+                   VerticalAlignment="Top"/>
+
+        <TextBox HorizontalAlignment="Left" 
+                 Margin="158,584,0,0" 
+                 Text="TextBox" 
+                 FontSize="35"
+                 TextAlignment="Left"
+                 Background="#e0dfdf"
+                 BorderBrush="#e0dfdf"
+                 VerticalAlignment="Top" 
+                 Height="80" 
+                 Width="894"/>
+        <TextBlock HorizontalAlignment="Left" 
+                   Margin="158,690,0,0"
+                   Foreground="#269d5d"
+                   FontWeight="SemiBold"
+                   FontSize="40"
+                   Text="Telefono: " 
+                   TextWrapping="Wrap" 
+                   VerticalAlignment="Top"/>
+        <TextBox HorizontalAlignment="Left" 
+                 Text="TextBox" 
+                 FontSize="35"
+                 TextAlignment="Left"
+                 Background="#e0dfdf"
+                 BorderBrush="#e0dfdf"
+                 Height="80"
+                 Margin="158,763,0,0" 
+                 VerticalAlignment="Top" Width="894"/>
+        <Button Content="Agregar" 
+                FontSize="40"
+                Foreground="White"
+                Background="#269d5d"
+                HorizontalAlignment="Left"
+                Margin="756,881,0,0"
+                VerticalAlignment="Top"
+                Height="80"
+                Width="300"/>
+        <Ellipse HorizontalAlignment="Left" 
+                 Height="400" 
+                 Width="400" 
+                 VerticalAlignment="Top" Margin="1287,375,0,0" 
+                 >
+            <Ellipse.Fill>
+                <ImageBrush 
+                    ImageSource="/Assets/grupo.jpg"
+                    Stretch="UniformToFill" 
+                    />
+            </Ellipse.Fill>
+        </Ellipse>
+
+
+    </RelativePanel>
+
+</Page>

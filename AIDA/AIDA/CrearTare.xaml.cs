@@ -28,9 +28,6 @@ namespace AIDA
             this.InitializeComponent();
             
         }
-        private Sync void nuevaTarea() {
-            
-        }
 
     }
 }

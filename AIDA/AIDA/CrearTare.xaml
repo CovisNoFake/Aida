@@ -7,7 +7,7 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-
+    
     <RelativePanel>
         <Grid HorizontalAlignment="Center" 
               Height="167" 
@@ -144,7 +144,6 @@
             <Image HorizontalAlignment="Left" Height="91" Margin="263,216,0,0" VerticalAlignment="Top" Width="61" Source="/Assets/users.png"/>
             <Image HorizontalAlignment="Left" Height="73" Margin="128,204,0,0" VerticalAlignment="Top" Width="79" Source="/Assets/docs.png"/>
         </Grid>
-
         <HyperlinkButton Content="Crear" 
                          HorizontalAlignment="Left" 
                          Height="95" 
@@ -152,6 +151,7 @@
                          VerticalAlignment="Top" 
                          Width="209" 
                          Margin="1455,198,0,0"/>
+        
 
 
 

@@ -20,16 +20,13 @@ namespace AIDA
     /// <summary>
     /// Una página vacía que se puede usar de forma independiente o a la que se puede navegar dentro de un objeto Frame.
     /// </summary>
-    public sealed partial class Principal : Page
+    public sealed partial class CreaUsuario : Page
     {
-        public Principal()
+        public CreaUsuario()
         {
             this.InitializeComponent();
         }
-        private void CreaTarea(object sender, RoutedEventArgs e)
-        {
-            Frame.Navigate(typeof(AgregaUsuario));
-        }
 
+       
     }
 }

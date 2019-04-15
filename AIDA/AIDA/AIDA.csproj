@@ -116,11 +116,17 @@
     <RestoreProjectStyle>PackageReference</RestoreProjectStyle>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="AgregaUsuario.xaml.cs">
+      <DependentUpon>AgregaUsuario.xaml</DependentUpon>
+    </Compile>
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
     <Compile Include="CrearTare.xaml.cs">
       <DependentUpon>CrearTare.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="CreaUsuario.xaml.cs">
+      <DependentUpon>CreaUsuario.xaml</DependentUpon>
     </Compile>
     <Compile Include="Login.xaml.cs">
       <DependentUpon>Login.xaml</DependentUpon>
@@ -143,8 +149,11 @@
     <Content Include="Assets\adelante.png" />
     <Content Include="Assets\clip.png" />
     <Content Include="Assets\docs.png" />
+    <Content Include="Assets\fondo.jpg" />
+    <Content Include="Assets\grupo.jpg" />
     <Content Include="Assets\image.jpg" />
     <Content Include="Assets\users.png" />
+    <Content Include="Assets\menos.png" />
     <Content Include="Properties\Default.rd.xml" />
     <Content Include="Assets\LockScreenLogo.scale-200.png" />
     <Content Include="Assets\SplashScreen.scale-200.png" />
@@ -159,7 +168,15 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Page Include="AgregaUsuario.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="CrearTare.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="CreaUsuario.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
