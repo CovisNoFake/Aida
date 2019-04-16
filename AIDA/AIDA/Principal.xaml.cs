@@ -28,8 +28,24 @@ namespace AIDA
         }
         private void CreaTarea(object sender, RoutedEventArgs e)
         {
-            Frame.Navigate(typeof(AgregaUsuario));
+            Frame.Navigate(typeof(CrearTare));
         }
+        private void Inicio(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(Principal));
+        }
+        private void Menu(object sender, RoutedEventArgs e)
+        {
+            if (!this.nav.IsPaneOpen)
+            {
+                this.nav.IsPaneOpen = true;
+            }
+            else
+            {
+                this.nav.IsPaneOpen = false;
+            }
+        }
+
 
     }
 }

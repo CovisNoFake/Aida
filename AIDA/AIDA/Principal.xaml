@@ -23,6 +23,84 @@
                              Margin="1311,0,0,0" 
                              VerticalAlignment="Center" 
                              Height="103" Width="272" RenderTransformOrigin="0.529,0.505"/>
+            <Image HorizontalAlignment="Left" 
+                   Height="67" 
+                   Tapped="Menu"
+                   Source="/Assets/menu.png"
+                   Margin="96,57,0,0" 
+                   VerticalAlignment="Top" 
+                   Width="64"/>
         </Grid>
+
+        <SplitView x:Name="nav"
+            IsPaneOpen="False"
+                   DisplayMode="Inline"
+                   OpenPaneLength="500" 
+                   Margin="0,167,0,-1076" HorizontalAlignment="Center">
+            <SplitView.Pane>
+                <RelativePanel>
+                    <TextBlock
+                        Text="Tareas"
+                        FontSize="40"
+                        Margin="84,258,-231,-281" 
+                        HorizontalAlignment="Stretch" 
+                        VerticalAlignment="Stretch"
+                        />
+                    <TextBlock
+                        Text="Agenda"
+                        FontSize="40" 
+                        FontStretch="Condensed"
+                        Margin="84,336,-238,-355" 
+                        HorizontalAlignment="Stretch" 
+                        VerticalAlignment="Stretch"
+                        />
+                    <TextBlock
+                        Text="Agenda"
+                        FontSize="40" 
+                        FontStretch="Condensed"
+                        Margin="84,336,-238,-355" 
+                        HorizontalAlignment="Stretch" 
+                        VerticalAlignment="Stretch"
+                        />
+                    <TextBlock
+                        Text="Usuarios"
+                        FontSize="40" 
+                        FontStretch="Condensed"
+                        Margin="84,408,-241,-426"
+                        />
+                    <TextBlock
+                        Text="Buscar"
+                        FontSize="40" 
+                        FontStretch="Condensed"
+                        Margin="84,483,-241,-500" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"
+                        />
+                    <Image HorizontalAlignment="Left" 
+                           Height="70" 
+                           Source="/Assets/usuario.png" 
+                           VerticalAlignment="Top" 
+                           Width="84" Margin="61,668,0,0" RenderTransformOrigin="0.565,0.743"/>
+
+                    <TextBlock
+                        Text="Nombre"
+                        FontSize="40" 
+                        FontStretch="Condensed"
+                        Margin="165,672,-322,-686"
+                        />
+                    <Image HorizontalAlignment="Left" 
+                           Height="70" 
+                           Source="/Assets/ajustes.png" 
+                           VerticalAlignment="Top" 
+                           Width="63" Margin="63,763,0,0" RenderTransformOrigin="0.565,0.743"/>
+                    <TextBlock
+                        Text="Ajustes"
+                        FontSize="40" 
+                        FontStretch="Condensed"
+                        Margin="166,763,-323,-774" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"
+                        />
+                </RelativePanel>
+            </SplitView.Pane>
+        </SplitView>
+
+
     </RelativePanel>
 </Page>
