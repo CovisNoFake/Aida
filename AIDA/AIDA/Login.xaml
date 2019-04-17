@@ -11,6 +11,12 @@
     </Page.Background>
 
     <RelativePanel>
+        <Image HorizontalAlignment="Left" 
+               Height="238" 
+               Source="/Assets/logo.png"
+               VerticalAlignment="Top"
+               Width="563" 
+               Margin="719,192,0,0"/>
         <TextBlock 
             TextAlignment="Center"
             FontSize="30"

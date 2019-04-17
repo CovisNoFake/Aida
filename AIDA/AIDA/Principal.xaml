@@ -14,15 +14,15 @@
               Background="#e0dfdf"
               Width="1920" Margin="0,0,0,0">
 
-            <HyperlinkButton Content="CREAR TAREA"
+            <TextBlock Text="CREAR TAREA"
                              FontSize="40"
-                             Click="CreaTarea"
+                             Tapped="CreaTarea"
                              x:Name="ctarea"
                              Foreground="#269d5d"
                              HorizontalAlignment="Left" 
-                             Margin="1311,0,0,0" 
-                             VerticalAlignment="Center" 
-                             Height="103" Width="272" RenderTransformOrigin="0.529,0.505"/>
+                             Margin="1311,62,0,0" 
+                             VerticalAlignment="Top" 
+                             Height="77" Width="272" RenderTransformOrigin="0.529,0.505"/>
             <Image HorizontalAlignment="Left" 
                    Height="67" 
                    Tapped="Menu"
@@ -30,33 +30,41 @@
                    Margin="96,57,0,0" 
                    VerticalAlignment="Top" 
                    Width="64"/>
+            <ComboBox HorizontalAlignment="Left" 
+                      Background="#e0dfdf"
+                      BorderBrush="#e0dfdf"
+                      FontSize="35"
+                      Foreground="#269d5d"
+                      Margin="360,57,0,0" 
+                      VerticalAlignment="Top" 
+                      Width="300" 
+                      Height="64">
+                <ComboBoxItem Background="#e0dfdf" IsSelected="True">Agenda</ComboBoxItem>
+                <ComboBoxItem Background="#e0dfdf">ComboBox Item #3</ComboBoxItem>
+                <ComboBoxItem Background="#e0dfdf">ComboBox Item #1</ComboBoxItem>
+            </ComboBox>
         </Grid>
 
         <SplitView x:Name="nav"
-            IsPaneOpen="False"
+            IsPaneOpen="false"
                    DisplayMode="Inline"
                    OpenPaneLength="500" 
                    Margin="0,167,0,-1076" HorizontalAlignment="Center">
             <SplitView.Pane>
                 <RelativePanel>
+
                     <TextBlock
                         Text="Tareas"
                         FontSize="40"
                         Margin="84,258,-231,-281" 
+                        Tapped="Tarea"
                         HorizontalAlignment="Stretch" 
                         VerticalAlignment="Stretch"
                         />
                     <TextBlock
                         Text="Agenda"
                         FontSize="40" 
-                        FontStretch="Condensed"
-                        Margin="84,336,-238,-355" 
-                        HorizontalAlignment="Stretch" 
-                        VerticalAlignment="Stretch"
-                        />
-                    <TextBlock
-                        Text="Agenda"
-                        FontSize="40" 
+                        Tapped="Inicio"
                         FontStretch="Condensed"
                         Margin="84,336,-238,-355" 
                         HorizontalAlignment="Stretch" 
@@ -65,12 +73,14 @@
                     <TextBlock
                         Text="Usuarios"
                         FontSize="40" 
+                        Tapped="Usuarios"
                         FontStretch="Condensed"
                         Margin="84,408,-241,-426"
                         />
                     <TextBlock
                         Text="Buscar"
                         FontSize="40" 
+                        Tapped="Buscar"
                         FontStretch="Condensed"
                         Margin="84,483,-241,-500" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"
                         />
@@ -82,7 +92,8 @@
 
                     <TextBlock
                         Text="Nombre"
-                        FontSize="40" 
+                        FontSize="40"
+                        Tapped="Perfil"
                         FontStretch="Condensed"
                         Margin="165,672,-322,-686"
                         />
@@ -93,10 +104,23 @@
                            Width="63" Margin="63,763,0,0" RenderTransformOrigin="0.565,0.743"/>
                     <TextBlock
                         Text="Ajustes"
+                        Tapped="Ajustes"
                         FontSize="40" 
                         FontStretch="Condensed"
                         Margin="166,763,-323,-774" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"
                         />
+                    <Ellipse HorizontalAlignment="Left"
+                             Height="130" 
+                             Width="130" 
+                             VerticalAlignment="Top"                              
+                             Margin="84,74,0,0">
+                        <Ellipse.Fill>
+                            <ImageBrush
+                                ImageSource="/Assets/image.jpg"
+                                />
+                        </Ellipse.Fill>
+                    </Ellipse>
+
                 </RelativePanel>
             </SplitView.Pane>
         </SplitView>

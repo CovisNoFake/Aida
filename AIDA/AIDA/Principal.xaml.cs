@@ -34,6 +34,26 @@ namespace AIDA
         {
             Frame.Navigate(typeof(Principal));
         }
+        private void Usuarios(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(AgregaUsuario));
+        }
+        private void Tarea(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(Tareas));
+        }
+        private void Buscar(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(Buscar));
+        }
+        private void Perfil(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(Perfil));
+        }
+         private void Ajustes(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(Ajustes));
+        }
         private void Menu(object sender, RoutedEventArgs e)
         {
             if (!this.nav.IsPaneOpen)
